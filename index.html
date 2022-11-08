@@ -1,9 +1,45 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <title>Rock Paper Scissors</title>
-    <script src="script2.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+   <div class="score">
+        <h1 class="ties">Ties: 0</h1>
+   </div>
+   <div class="winnerDiv">
+     <h1 class="winner"></h1>
+     <button class="reset" onclick="resetGame()">Play Again?</button>
+   </div>
+   
+   <div class="choices">
+     <div class="player-section">
+        <h3 class="player-choice"></h3>
+        <h3 class="player-score">Score: 0</h3>
+        <div class="player-imgs">
+          <img src="./images/rock-emoji" alt="rock" class="playerimg" id="rock">
+          <img src="./images/paper-with-curl.png" alt="paper" class="playerimg" id="paper">
+          <img src="./images/scissors.png" alt="scissors" class="playerimg" id="scissors">
+        </div>
+     </div>
     
-</body>
+     <div class="computer-section">
+        <h3 class="computer-choice"></h3>
+        <h3 class="computer-score">Score: 0</h3>
+        <div class="computer-imgs">
+          <img src="./images/rock-emoji" alt="rock" class="rock">
+          <img src="./images/paper-with-curl.png" alt="paper" class="paper">
+          <img src="./images/scissors.png" alt="scissors" class="scissors">
+        </div>  
+     </div>
+  </div>
+   
+  </body>
+  <script src="script2.js"></script>
+</html>
